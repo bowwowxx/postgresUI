@@ -1,2 +1,1 @@
-# postgresUI
-test
+PostgreSQL UI test
