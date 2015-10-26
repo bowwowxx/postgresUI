@@ -1,0 +1,40 @@
+{
+  "name": "postgreUI",
+  "version": "1.0.0",
+  "description": "Postgre CRUD",
+  "main": "server.js",
+  "dependencies": {
+    "http": "~0.0.0",
+    "request": "~2.36.0",
+    "express": "*",
+    "logfmt": "~1.1.2",
+    "body-parser": "*",
+    "serve-favicon": "*",
+    "cookie-parser": "~1.0.1",
+    "jade": "*",
+    "jaydata" : "*",
+    "xmldom" : "*",
+    "q" : "*",
+    "express-error-handler": "*",
+    "pg":"*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "keywords": [
+    "Salesforce",
+    "Tooling",
+    "API"
+  ],
+  "author": "??",
+  "license": "MIT"
+}

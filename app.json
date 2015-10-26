@@ -1,0 +1,5 @@
+{
+  "name": "PostgreSQL UI",
+  "description": "CRUD operations using PostgreSQL as a database javascript based MVC",
+  "keywords": ["Node.js", "PostgreSQL"]
+}
