@@ -1,6 +1,6 @@
 {
   "name": "postgreUI",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Postgre CRUD",
   "main": "server.js",
   "dependencies": {
@@ -35,6 +35,6 @@
     "Tooling",
     "API"
   ],
-  "author": "??",
+  "author": "test",
   "license": "MIT"
 }

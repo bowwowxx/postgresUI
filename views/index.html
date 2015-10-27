@@ -9,7 +9,7 @@
                 <div class="col-md-12 column">
                     <div class="jumbotron">
                         <h1>
-                            MetaData 
+                            MetaData
                         </h1>
                         <p>
                             This application demonstrates database operations using PostgreSQL as a database, as javascript based MVC.
@@ -24,22 +24,70 @@
             <div class="row clearfix" style="margin-bottom:10px;">
                 <div class="controls form-inline form-group">
                     <div class="col-md-2">
-                        <input id="fName" name="fName"  placeholder="First Name" ng-model="fName"
+                        <input id="title" name="title"  placeholder="title" ng-model="title"
                                type="text" class="form-control input-small">
                     </div>
 
                     <div class="col-md-2">
-                        <input id="lName" name="lName"  placeholder="Last Name" ng-model="lName"
+                        <input id="len" name="len"  placeholder="len" ng-model="len"
                                type="text" class="form-control input-small">
                     </div>
 
                     <div class="col-md-2">
-                        <input id="Email" name="Email"  placeholder="Email" ng-model="email"
+                        <input id="lang" name="lang"  placeholder="lang" ng-model="lang"
                                type="text" class="form-control input-small">
                     </div>
 
                     <div class="col-md-2">
-                        <input id="mobile" name="mobile"  placeholder="Mobile" ng-model="mbl"
+                        <input id="artist" name="artist"  placeholder="artist" ng-model="artist"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="artist_keywords" name="artist_keywords"  placeholder="artist_keywords" ng-model="artist_keywords"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="gender" name="gender"  placeholder="gender" ng-model="gender"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="country" name="country"  placeholder="country" ng-model="country"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="genre" name="genre"  placeholder="genre" ng-model="genre"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="subtitle" name="subtitle"  placeholder="subtitle" ng-model="subtitle"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="release_date" name="release_date"  placeholder="release_date" ng-model="release_date"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="add_date" name="add_date"  placeholder="add_date" ng-model="add_date"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="artist_pic_url" name="artist_pic_url"  placeholder="artist_pic_url" ng-model="artist_pic_url"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="lyrics" name="lyrics"  placeholder="lyrics" ng-model="lyrics"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="composer" name="composer"  placeholder="composer" ng-model="composer"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="rank" name="rank"  placeholder="rank" ng-model="rank"
+                               type="text" class="form-control input-small">
+                    </div>
+                    <div class="col-md-2">
+                        <input id="propoties" name="propoties"  placeholder="propoties" ng-model="propoties"
                                type="text" class="form-control input-small">
                     </div>
 
@@ -54,21 +102,45 @@
                 <table class="table table-bordered table-hover table-condensed">
                     <thead>
                         <tr>
-                            <th>  Id  </th>
-                            <th> First Name </th>
-                            <th> Last Name </th>
-                            <th>  Email </th>
-                            <th>  Mobile </th>
+                            <th>  Id    </th>
+                            <th>  Title </th>
+                            <th>  Len   </th>
+                            <th>  Lang </th>
+                            <th>  Artist </th>
+                            <th>  Artist_keywords  </th>
+                            <th>  Gender </th>
+                            <th>  Country </th>
+                            <th>  Genre </th>
+                            <th>  Subtitle </th>
+                            <th>  Release_date  </th>
+                            <th>  Add_date </th>
+                            <th>  Artist_pic_url </th>
+                            <th>  Lyrics </th>
+                            <th>  Composer </th>
+                            <th>  Rank  </th>
+                            <th>  Propoties </th>
                             <th>   </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr ng-repeat="item in dataset">
                             <td> {{item.id}} </td>
-                            <td> {{item.firstname}} </td>
-                            <td> {{item.lastname}} </td>
-                            <td> {{item.email}} </td>
-                            <td> {{item.mobile}} </td>
+                            <td> {{item.title}} </td>
+                            <td> {{item.len}} </td>
+                            <td> {{item.lang}} </td>
+                            <td> {{item.artist}} </td>
+                            <td> {{item.artist_keywords}} </td>
+                            <td> {{item.gender}} </td>
+                            <td> {{item.country}} </td>
+                            <td> {{item.genre}} </td>
+                            <td> {{item.subtitle}} </td>
+                            <td> {{item.release_date}} </td>
+                            <td> {{item.add_date}} </td>
+                            <td> {{item.artist_pic_url}} </td>
+                            <td> {{item.lyrics}} </td>
+                            <td> {{item.composer}} </td>
+                            <td> {{item.rank}} </td>
+                            <td> {{item.propoties}} </td>
                             <td> <span title="delete this record" class="glyphicon glyphicon-trash text-danger" style="cursor:pointer" ng-click="delRecord(item.id)"></span> </td>
                         </tr>
                     </tbody>
@@ -84,10 +156,22 @@
 
             myApp.controller('postgreSQLCtrl', ['$scope' ,'$http',  function($scope,$http) {
                 $scope.val1 = 'This is temp Val' ;
-                $scope.fName = '';
-                $scope.lName = '';
-                $scope.email = '';
-                $scope.mbl = '' ;
+                $scope.title = '';
+                $scope.len = '';
+                $scope.lang = '';
+                $scope.artist = '' ;
+                $scope.artist_keywords = '';
+                $scope.gender = '';
+                $scope.country = '';
+                $scope.genre = '' ;
+                $scope.subtitle = '';
+                $scope.release_date = '';
+                $scope.add_date = '';
+                $scope.artist_pic_url = '' ;
+                $scope.lyrics = '';
+                $scope.composer = '';
+                $scope.rank = '' ;
+                $scope.propoties = '' ;
 
                 $scope.getAllRec = function(){
                      $http({method: 'GET', url: '/db/readRecords'}).
@@ -101,8 +185,14 @@
 
 
                 $scope.addRecord = function(){
-                    $http({method: 'GET', url: '/db/addRecord?fName='+$scope.fName+'&lName='+
-                           $scope.lName+'&email='+$scope.email+'&mbl='+$scope.mbl}).
+                  $http({method: 'GET', url: '/db/addRecord?title='+$scope.title+'&len='+
+                         $scope.len+'&lang='+$scope.lang+'&artist='+$scope.artist+'&artist_keywords='+
+                         $scope.artist_keywords+'&gender='+$scope.gender+'&country='+$scope.country+'&genre='+
+                         $scope.genre+'&genre='+$scope.genre+'&subtitle='+$scope.subtitle+'&release_date='+
+                         $scope.release_date+'&add_date='+$scope.add_date+'&artist_pic_url='+$scope.artist_pic_url+'&lyrics='+
+                         $scope.lyrics+'&composer='+$scope.composer+'&rank='+$scope.rank+'&propoties='+
+                         $scope.propoties}).
+                         
                         success(function(data, status) {
                                 alert('Record Added');
                                 $scope.getAllRec();
